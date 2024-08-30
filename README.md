@@ -25,7 +25,7 @@ Welcome to S.P.Enterprise, your go-to IT consultancy for all things web and grap
 SP House, Aadil Park, 33, nr. Darul Uloom Road,  
 Momin Park, Tandalja, Vadodara, Gujarat 390012
 
-**Email:** contact@spenterprise.com
+**Email:** connectspenterprise@gmail.com
 
 **Social Media:**
 - [GitHub](https://github.com/SP-Enterprises)
