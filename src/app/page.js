@@ -15,6 +15,8 @@ import TermsAndConditions from "@/components/terms-conditions";
 import ReturnsPolicy from "@/components/returns-policy";
 import Accessibility from "@/components/accessibility";
 import Footer from "@/components/Footer";
+import { Analytics } from '@vercel/analytics/react';
+
 
 export default function Home() {
   const [activeLegalSection, setActiveLegalSection] = useState("");
@@ -44,6 +46,7 @@ export default function Home() {
           <Subscribe />
           <Team />
           <AboutUs />
+          <Analytics />
         </div>
       </section>
 
