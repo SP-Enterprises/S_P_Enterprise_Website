@@ -65,7 +65,7 @@ const Navbar = () => {
             alt="S.P. Enterprise"
             className="w-16 h-auto border-2 border-purple-600 shadow-lg transition-all duration-300 hover:border-purple-800 hover:shadow-xl hover:scale-105 rounded-lg"
           />
-          <h2 className="text-3xl font-semibold transition-all duration-300 hover:text-purple-600">
+          <h2 className="text-2xl font-semibold transition-all duration-300 hover:text-purple-600">
             <span className="text-purple-600 transition-colors duration-300 hover:text-purple-600">
               S.P.
             </span>
