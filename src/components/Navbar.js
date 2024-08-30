@@ -118,29 +118,29 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="flex items-center gap-2 sm:gap-4 md:gap-2 lg:gap-4">
-          <button className="capitalize text-sm sm:text-base border-2 hover:border-2 font-semibold sm:py-3 py-2 px-3 sm:px-6 text-purple-600 border-purple-600 hover:border-purple-600 hover:bg-purple-600 hover:text-white rounded-full">
-            <Link href={"#pricing"}>Get Started</Link>
-          </button>
-          <button>
-            {theme === "dark" ? (
-              <LightModeRoundedIcon
-                onClick={() => setTheme("light")}
-                className="text-white"
-              />
-            ) : (
-              <DarkModeOutlinedIcon onClick={() => setTheme("dark")} />
-            )}
-          </button>
-          <button
-            aria-label="menu"
-            className={`${theme === "dark" ? "text-white" : "text-black"
-              } md:hidden`}
-            onClick={() => setToggleMenu(true)}
-          >
-            <MenuIcon />
-          </button>
-        </div>
+        <div className="flex items-center gap-1 sm:gap-2 md:gap-1 lg:gap-2">
+  <button className="capitalize text-xs sm:text-sm border-2 font-semibold sm:py-2 py-1 px-2 sm:px-4 text-purple-600 border-purple-600 hover:border-purple-600 hover:bg-purple-600 hover:text-white rounded-full">
+    <Link href={"#pricing"}>Get Started</Link>
+  </button>
+  <button>
+    {theme === "dark" ? (
+      <LightModeRoundedIcon
+        onClick={() => setTheme("light")}
+        className="text-white"
+      />
+    ) : (
+      <DarkModeOutlinedIcon onClick={() => setTheme("dark")} />
+    )}
+  </button>
+  <button
+    aria-label="menu"
+    className={`${theme === "dark" ? "text-white" : "text-black"} md:hidden`}
+    onClick={() => setToggleMenu(true)}
+  >
+    <MenuIcon />
+  </button>
+</div>
+
       </div>
     </div>
   );
