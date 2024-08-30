@@ -13,7 +13,7 @@ const Footer = ({ onLegalLinkClick }) => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <Link href={"/"} className="text-3xl">
-              <span className="text-purple-600">S.P.</span>Enterprise.
+              <b><span className="text-purple-600">S.P.</span>Enterprise.</b>
             </Link>
             <p className="max-w-xs mt-4 text-sm">
               End-to-End Excellence in Web and Graphic Design. Seamless Solutions from Concept to Completion.

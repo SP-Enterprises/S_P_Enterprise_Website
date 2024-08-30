@@ -54,18 +54,17 @@ const Navbar = () => {
   return (
     <div
       ref={navbar}
-      className={`${
-        theme === "dark" ? "bg-[#121212]" : "bg-white text-black"
-      } w-full z-50 fixed top-0 left-0 py-4 mb-10`}
+      className={`${theme === "dark" ? "bg-[#121212]" : "bg-white text-black"
+        } w-full z-50 fixed top-0 left-0 py-4 mb-10`}
     >
       <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <img
             src={"/logo.png"} // Replace with the path to your logo
             alt="S.P. Enterprise"
-            className="w-16 h-auto border-2 border-purple-600 shadow-lg transition-all duration-300 hover:border-purple-800 hover:shadow-xl hover:scale-105 rounded-lg"
+            className="w-12 h-auto border-2 border-purple-600 shadow-lg transition-all duration-300 hover:border-purple-800 hover:shadow-xl hover:scale-105 rounded-lg"
           />
-          <h2 className="text-2xl font-semibold transition-all duration-300 hover:text-purple-600">
+          <h2 className="text-xl font-semibold transition-all duration-300 hover:text-purple-600">
             <span className="text-purple-600 transition-colors duration-300 hover:text-purple-600">
               S.P.
             </span>
@@ -75,20 +74,18 @@ const Navbar = () => {
           </h2>
         </div>
 
+
         <div>
           <ul
-            className={`${
-              toggleMenu === true ? "left-0" : "-left-full"
-            } ${
-              theme === "dark"
+            className={`${toggleMenu === true ? "left-0" : "-left-full"
+              } ${theme === "dark"
                 ? "bg-[#121212] text-white"
                 : "bg-white text-black"
-            } z-50 flex md:items-center gap-1 md:gap-5 lg:gap-10 md:relative absolute top-0 md:left-0 w-80 transition-all duration-500 h-screen md:w-auto md:h-auto flex-col md:flex-row shadow-2xl py-24 px-10 md:p-0 md:shadow-none`}
+              } z-50 flex md:items-center gap-1 md:gap-5 lg:gap-10 md:relative absolute top-0 md:left-0 w-80 transition-all duration-500 h-screen md:w-auto md:h-auto flex-col md:flex-row shadow-2xl py-24 px-10 md:p-0 md:shadow-none`}
           >
             <button
-              className={`${
-                theme === "dark" ? "text-white" : "text-black"
-              } md:hidden absolute top-6 right-5`}
+              className={`${theme === "dark" ? "text-white" : "text-black"
+                } md:hidden absolute top-6 right-5`}
               onClick={() => setToggleMenu(false)}
             >
               <CloseOutlinedIcon />
@@ -97,11 +94,10 @@ const Navbar = () => {
               (link) => (
                 <li
                   key={link}
-                  className={`${
-                    selectedItem === link.toLowerCase()
-                      ? "text-purple-600"
-                      : ""
-                  } capitalize border-b py-4 md:border-none md:py-0 hover:text-purple-600`}
+                  className={`${selectedItem === link.toLowerCase()
+                    ? "text-purple-600"
+                    : ""
+                    } capitalize border-b py-4 md:border-none md:py-0 hover:text-purple-600`}
                   onClick={() => setSelectedItem(link.toLowerCase())}
                 >
                   <Link href={`#${link.toLowerCase()}`}>{link}</Link>
@@ -138,9 +134,8 @@ const Navbar = () => {
           </button>
           <button
             aria-label="menu"
-            className={`${
-              theme === "dark" ? "text-white" : "text-black"
-            } md:hidden`}
+            className={`${theme === "dark" ? "text-white" : "text-black"
+              } md:hidden`}
             onClick={() => setToggleMenu(true)}
           >
             <MenuIcon />
