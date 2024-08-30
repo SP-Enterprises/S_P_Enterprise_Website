@@ -10,6 +10,7 @@ const GetQuoteNow = () => {
   const [mobile, setMobile] = useState(""); // New state for mobile number
   const [service, setService] = useState("Web Design");
   const [plan, setPlan] = useState("Basic Web Design Package");
+  const [isPopupVisible, setIsPopupVisible] = useState(false); // State for managing popup visibility
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
@@ -34,6 +35,7 @@ const GetQuoteNow = () => {
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           setBtnText("Get Quote Now / Submit");
+          setIsPopupVisible(true); // Show popup on success
         },
         (err) => {
           console.error("FAILED...", err);
@@ -42,10 +44,17 @@ const GetQuoteNow = () => {
       );
   };
 
+  const closePopup = () => {
+    setIsPopupVisible(false); // Hide popup when the close button is clicked
+  };
+
   return (
     <section className="container mx-auto px-5 md:px-16" id="Subscribe">
       <div className="bg-purple-600 rounded-lg text-white py-16 sm:py-24">
-        <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4 sm:gap-6 w-[90%] md:w-4/5 lg:w-1/2 text-center mx-auto">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col items-center gap-4 sm:gap-6 w-[90%] md:w-4/5 lg:w-1/2 text-center mx-auto"
+        >
           <h2 className="text-2xl sm:text-4xl font-semibold">Get a Quote Now!!!</h2>
           <p className="leading-loose font-[500]">Enter your details below and we will contact you ASAP!</p>
 
@@ -111,6 +120,22 @@ const GetQuoteNow = () => {
           </button>
         </form>
       </div>
+
+      {/* Popup Modal */}
+      {isPopupVisible && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg p-8 text-center">
+            <h2 className="text-2xl font-semibold mb-4">Submission Successful!</h2>
+            <p className="mb-4">Thank you for your inquiry. We will get back to you soon.</p>
+            <button
+              onClick={closePopup}
+              className="py-2 px-4 bg-purple-600 text-white rounded-full hover:bg-purple-700"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
