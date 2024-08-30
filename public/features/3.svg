@@ -1,0 +1,31 @@
+<svg width="96" height="104" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#filter0_d)">
+    <rect x="18" y="20" width="60" height="70" rx="4" fill="url(#paint0_linear)"/>
+  </g>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M38 28h20v40H38V28z" fill="#FFFFFF"/>
+  <path d="M53 74c-2.21 0-4-1.79-4-4s1.79-4 4-4h6v8h-6z" fill="url(#paint1_linear)"/>
+  <path d="M50 71l3 3-6 2-3-3 6-2z" fill="url(#paint2_linear)"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="18" y1="20" x2="78" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#9B6DFF"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="53" y1="66" x2="63" y2="74" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#9B6DFF"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="44" y1="70" x2="56" y2="74" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#9B6DFF"/>
+    </linearGradient>
+    <filter id="filter0_d" x="0" y="0" width="96" height="104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="13"/>
+      <feGaussianBlur stdDeviation="10.5"/>
+      <feColorMatrix values="0 0 0 0 0.478431 0 0 0 0 0.235294 0 0 0 0 0.596078 0 0 0 0.3 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+</svg>
