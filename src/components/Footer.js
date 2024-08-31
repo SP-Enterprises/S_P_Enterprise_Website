@@ -67,8 +67,8 @@ const Footer = ({ onLegalLinkClick }) => {
             <div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d118134.04926302312!2d73.06591557225627!3d22.289766204772473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x395fc7b52c7fa039%3A0xc1a0439e6bdbc071!2sSP%20House%2C%20Aadil%20Park%2C%2033%2C%20nr.%20Darul%20Uloom%20Road%2C%20Momin%20Park%2C%20Tandalja%2C%20Vadodara%2C%20Gujarat%20390012!3m2!1d22.289787!2d73.1483172!5e0!3m2!1sen!2sin!4v1724661972308!5m2!1sen!2sin"
-                width="250"
-                height="100"
+                width="130"
+                height="130"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
