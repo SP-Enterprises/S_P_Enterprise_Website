@@ -15,7 +15,6 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [selectedItem, setSelectedItem] = useState("/");
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
   const navbar = useRef();
 
   useEffect(() => {
@@ -51,6 +50,16 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleLinkClick = (link) => {
+    setSelectedItem(link);
+    setToggleMenu(false);
+
+    const section = document.getElementById(link);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       ref={navbar}
@@ -74,7 +83,6 @@ const Navbar = () => {
           </h2>
         </div>
 
-
         <div>
           <ul
             className={`${toggleMenu === true ? "left-0" : "-left-full"
@@ -90,17 +98,17 @@ const Navbar = () => {
             >
               <CloseOutlinedIcon />
             </button>
-            {["home", "services", "About Us", "Our Team", "Contact Us"].map(
+            {["home", "services", "about us", "our team", "contact us"].map(
               (link) => (
                 <li
                   key={link}
-                  className={`${selectedItem === link.toLowerCase()
+                  className={`${selectedItem === link
                     ? "text-purple-600"
                     : ""
                     } capitalize border-b py-4 md:border-none md:py-0 hover:text-purple-600`}
-                  onClick={() => setSelectedItem(link.toLowerCase())}
+                  onClick={() => handleLinkClick(link)}
                 >
-                  <Link href={`#${link.toLowerCase()}`}>{link}</Link>
+                  <Link href={`#${link}`}>{link.replace(/-/g, " ")}</Link>
                 </li>
               )
             )}
