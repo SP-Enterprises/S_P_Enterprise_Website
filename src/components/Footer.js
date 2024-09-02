@@ -81,7 +81,7 @@ const Footer = ({ onLegalLinkClick }) => {
         <p className="mt-8 text-xs">
           <b>Contact:</b> <a href="tel:+919265324576" className="text-purple-600 hover:underline">(+91) 926-532-4576</a><br />
           <b>Email:</b> <a href="mailto:connectspenterprise@gmail.com" className="text-purple-600 hover:underline">connectspenterprise@gmail.com</a><br />
-          <b>Address 1:</b> SP House, Aadil Park, 33, nr. Darul Uloom Road, Momin Park, Tandalja, Vadodara, Gujarat 390012.<br />
+          <b>Address 1:</b> SP House, Aadil Park, 33, nr. Darul Uloom Road, Momin Park,<br/> Tandalja, Vadodara, Gujarat 390012.<br />
           <b>Address 2:</b> Vancouver, BC V5M 4X5, Canada
           
           <br />
