@@ -7,35 +7,35 @@ const GetQuoteNow = () => {
   const [btnText, setBtnText] = useState("Get Quote Now / Submit");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [mobile, setMobile] = useState(""); // New state for mobile number
+  const [mobile, setMobile] = useState(""); 
   const [service, setService] = useState("Web Design");
   const [plan, setPlan] = useState("Basic Web Design Package");
-  const [isPopupVisible, setIsPopupVisible] = useState(false); // State for managing popup visibility
+  const [isPopupVisible, setIsPopupVisible] = useState(false); 
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
+    e.preventDefault(); 
     setBtnText("Submitting...");
 
     const templateParams = {
       name,
       email,
-      mobile, // Include mobile number in template params
+      mobile, 
       service,
-      plan: service === "Career with Us" ? "N/A" : plan, // Set plan to "N/A" if service is "Career with Us"
+      plan: service === "Career with Us" ? "N/A" : plan, 
     };
 
     emailjs
       .send(
-        "service_5z0xmwt", // Replace with your EmailJS Service ID
-        "template_0e3ajfk", // Replace with your EmailJS Template ID
+        "service_5z0xmwt", 
+        "template_0e3ajfk", 
         templateParams,
-        "CEkEt0eO5ZaejHFMS" // Replace with your EmailJS User ID
+        "CEkEt0eO5ZaejHFMS" 
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           setBtnText("Get Quote Now / Submit");
-          setIsPopupVisible(true); // Show popup on success
+          setIsPopupVisible(true); 
         },
         (err) => {
           console.error("FAILED...", err);
@@ -45,7 +45,28 @@ const GetQuoteNow = () => {
   };
 
   const closePopup = () => {
-    setIsPopupVisible(false); // Hide popup when the close button is clicked
+    setIsPopupVisible(false); 
+  };
+
+  const getPlanOptions = () => {
+    if (service === "Web Design") {
+      return (
+        <>
+          <option value="Basic Web Design Package">Basic Web Design Package</option>
+          <option value="Standard Web Design Package">Standard Web Design Package</option>
+          <option value="Premium Web Design Package">Premium Web Design Package</option>
+        </>
+      );
+    } else if (service === "Graphic Design") {
+      return (
+        <>
+          <option value="Basic Design Package">Basic Design Package</option>
+          <option value="Standard Design Package">Standard Design Package</option>
+          <option value="Premium Design Package">Premium Design Package</option>
+        </>
+      );
+    }
+    return null;
   };
 
   return (
@@ -64,7 +85,7 @@ const GetQuoteNow = () => {
             placeholder="Enter your name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-black"
+            className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-purple-600 placeholder-purple-600"
           />
 
           <input
@@ -73,7 +94,7 @@ const GetQuoteNow = () => {
             placeholder="Enter your email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-black"
+            className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-purple-600 placeholder-purple-600"
           />
 
           <input
@@ -82,14 +103,14 @@ const GetQuoteNow = () => {
             placeholder="Enter your mobile number"
             value={mobile}
             onChange={(e) => setMobile(e.target.value)}
-            className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-black"
+            className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-purple-600 placeholder-purple-600"
           />
 
           <select
             required
             value={service}
             onChange={(e) => setService(e.target.value)}
-            className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-black"
+            className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-purple-600 placeholder-purple-600"
           >
             <option value="Web Design">Web Design</option>
             <option value="Graphic Design">Graphic Design</option>
@@ -101,14 +122,9 @@ const GetQuoteNow = () => {
               required
               value={plan}
               onChange={(e) => setPlan(e.target.value)}
-              className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-black"
+              className="rounded-full bg-white px-3 py-4 text-center sm:text-left sm:p-6 border-none outline-none w-full font-[500] text-purple-600 placeholder-purple-600"
             >
-              <option value="Basic Web Design Package">Basic Web Design Package</option>
-              <option value="Standard Web Design Package">Standard Web Design Package</option>
-              <option value="Premium Web Design Package">Premium Web Design Package</option>
-              <option value="Basic Design Package">Basic Design Package</option>
-              <option value="Standard Design Package">Standard Design Package</option>
-              <option value="Premium Design Package">Premium Design Package</option>
+              {getPlanOptions()}
             </select>
           )}
 
@@ -121,7 +137,6 @@ const GetQuoteNow = () => {
         </form>
       </div>
 
-      {/* Popup Modal */}
       {isPopupVisible && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white rounded-lg p-8 text-center">
