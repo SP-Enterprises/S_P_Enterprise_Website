@@ -16,7 +16,8 @@ import ReturnsPolicy from "@/components/returns-policy";
 import Accessibility from "@/components/accessibility";
 import Footer from "@/components/Footer";
 import { Analytics } from '@vercel/analytics/react';
-
+import "./globals.css";
+import Script from 'next/script';
 
 export default function Home() {
   const [activeLegalSection, setActiveLegalSection] = useState("");
@@ -35,6 +36,22 @@ export default function Home() {
 
   return (
     <>
+     <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-W0PHS9BQGP"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-W0PHS9BQGP');
+          `,
+        }}
+      />
       <section id="home">
         <div className="flex flex-col gap-16 md:gap-32">
           <HeroSection />
