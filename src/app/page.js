@@ -15,6 +15,7 @@ import TermsAndConditions from "@/components/terms-conditions";
 import ReturnsPolicy from "@/components/returns-policy";
 import Accessibility from "@/components/accessibility";
 import Footer from "@/components/Footer";
+import Clients from "@/components/Clients"
 import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import Script from 'next/script';
@@ -61,6 +62,7 @@ export default function Home() {
           <Work />
           <Pricing />
           <Subscribe />
+          <Clients />
           <Team />
           <AboutUs />
           <Analytics />
