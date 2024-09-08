@@ -76,7 +76,7 @@ const PrivacyPolicy = () => {
             Changes to This Policy
           </h3>
           <p>
-            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Your continued use of our services after changes have been made signifies your acceptance of the updated policy.
+            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Your continous use of our services after changes have been made signifies your acceptance of the updated policy.
           </p>
         </div>
 

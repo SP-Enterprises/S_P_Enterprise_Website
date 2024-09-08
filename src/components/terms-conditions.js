@@ -66,7 +66,7 @@ const TermsAndConditions = () => {
             Changes to Terms
           </h3>
           <p>
-            We reserve the right to update or modify these Terms & Conditions at any time. Any changes will be posted on this page with an updated revision date. Your continued use of our website after changes have been made signifies your acceptance of the updated terms.
+            We reserve the right to update or modify these Terms & Conditions at any time. Any changes will be posted on this page with an updated revision date. Your continous use of our website after changes have been made signifies your acceptance of the updated terms.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ const TermsAndConditions = () => {
             Governing Law
           </h3>
           <p>
-            These Terms & Conditions are governed by and construed in accordance with the laws of the State of Gujarat, India. Any disputes arising under or in connection with these terms shall be subject to the exclusive jurisdiction of the courts of Vadodara, Gujarat.
+          These Terms and Conditions, and any disputes arising from or related to the use of this website, shall be governed by the laws of the Republic of India. Any legal actions, suits, or proceedings arising out of or relating to these Terms shall be brought exclusively in the courts of Vadodara, Gujarat, and you hereby irrevocably submit to the jurisdictionn of such courts.
           </p>
         </div>
 

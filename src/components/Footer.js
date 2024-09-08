@@ -13,7 +13,7 @@ const Footer = ({ onLegalLinkClick }) => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <Link href={"/"} className="text-3xl">
-              <b><span className="text-purple-600">S.P.</span>Enterprise.</b>
+              <b><span className="text-purple-600 aquire-bold" >S.P.</span><span className ="aquire-bold">Enterprise.</span></b>
             </Link>
             <p className="max-w-xs mt-4 text-sm">
               End-to-End Excellence in Web and Graphic Design. Seamless Solutions from Concept to Completion.
@@ -85,7 +85,7 @@ const Footer = ({ onLegalLinkClick }) => {
           <b>Address 2:</b> Vancouver, BC V5M 4X5, Canada
           
           <br />
-          © 2024 Samir Pathan - All rights reserved
+          © 2024 <span className="text-purple-600 aquire-bold" >S.P.</span><span className ="aquire-bold">Enterprise.</span> - All rights reserved
         </p>
 
       </div>
