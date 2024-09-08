@@ -67,20 +67,22 @@ const Navbar = () => {
         } w-full z-50 fixed top-0 left-0 py-4 mb-10`}
     >
       <div className="container px-5 md:px-16 flex items-center justify-between mx-auto">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-0">
           <img
-            src={"/logo.png"} // Replace with the path to your logo
+            src={"/logo-png-purple-600.png"} // Replace with the path to your logo
             alt="S.P. Enterprise"
-            className="w-12 h-auto border-2 border-purple-600 shadow-lg transition-all duration-300 hover:border-purple-800 hover:shadow-xl hover:scale-105 rounded-lg"
+            className="w-12 h-auto"
           />
-          <h2 className="text-xl font-semibold transition-all duration-300 hover:text-purple-600">
+          <h2 className="company-name text-xl font-semibold transition-all duration-300 hover:text-purple-600">
             <span className="text-purple-600 transition-colors duration-300 hover:text-purple-600">
               S.P.
             </span>
             <span className="transition-colors duration-300 hover:text-purple-600">
-              Enterprise.
+              ENTERPRISE.
             </span>
           </h2>
+
+
         </div>
 
         <div>

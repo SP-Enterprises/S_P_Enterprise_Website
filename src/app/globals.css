@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: "Aquire Bold";
+  src: url("/fonts/Aquire-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Apply this font to the specific text */
+.company-name {
+  font-family: "Aquire Bold", sans-serif;
+}
+
+
+
 body {
   overflow-x: hidden;
 }
