@@ -73,7 +73,7 @@ const Navbar = () => {
             alt="S.P. Enterprise"
             className="w-12 h-auto"
           />
-          <h2 className="company-name text-xl font-semibold transition-all duration-300 hover:text-purple-600">
+          <h2 className="company-name text-l font-semibold transition-all duration-300 hover:text-purple-600">
             <span className="text-purple-600 transition-colors duration-300 hover:text-purple-600">
               S.P.
             </span>
