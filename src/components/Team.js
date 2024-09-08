@@ -57,7 +57,12 @@ const Team = () => {
         <TeamCard
           imgSrc={"/team/2.png"}
           name="Uvesh Khan"
-          title="Graphic Designer | UI / UX"
+          title={<>
+            Graphic Designer | UI / UX 
+            <br />
+          Digital Marketing
+          </>
+          }
           instagram="https://www.instagram.com/uvxxsh?igsh=ODZreHVzeml4Y3pq"
           github="https://github.com/"
           linkedin="https://www.linkedin.com/in/uvesh-khan-031547221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
@@ -65,7 +70,13 @@ const Team = () => {
         <TeamCard
           imgSrc={"/team/3.png"}
           name="Obaid Arab"
-          title="Web Designer | Wordpress Developer"
+          title=
+          {<>
+           Web Designer |
+            <br />
+            Wordpress Developer
+          </>
+          }
           instagram="https://www.instagram.com/_o.b__1412._/"
           github="https://github.com/"
           linkedin="https://www.linkedin.com/in/obaid-arab/"

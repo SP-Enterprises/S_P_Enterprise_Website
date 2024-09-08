@@ -32,10 +32,8 @@ const QualityFeatures = () => {
           title="Web Design"
           desc={
             <>
-              Transform your online presence with our expert web design services. At{" "}
-              <span className="text-purple-600 aquire-bold" >S.P.</span><span className ="aquire-bold">Enterprise.</span>
-              , we create visually stunning, user-friendly websites tailored to your brand's needs. Our designs focus on delivering a seamless user experience, responsive layouts, and effective navigation to engage your audience and drive results. Whether you're looking to build a new site or refresh an existing one, our team combines creativity with the latest technology to bring your vision to life.
-            </>
+              Boost your online presence with {" "}
+              <span className="text-purple-600 aquire-bold" >S.P.</span><span className="aquire-bold">Enterprise.</span> We design stunning, user-friendly websites tailored to your brand, ensuring seamless navigation and responsiveness. Let us bring your vision to life with creativity and cutting-edge technology.</>
           }
         />
 
@@ -44,10 +42,8 @@ const QualityFeatures = () => {
           title="Graphic Design"
           desc={
             <>
-              Elevate your brand with our exceptional graphic design services.
-              At {" "}
-              <span className="text-purple-600 aquire-bold" >S.P.</span><span className ="aquire-bold">Enterprise.</span>, we craft compelling visuals that captivate and communicate. From logos and marketing materials to social media graphics and infographics, our designs are tailored to your brand's identity and goals. We blend creativity with strategic insight to create impactful designs that resonate with your audience and enhance your brand’s presence. Let us help you make a lasting impression with designs that stand out.
-            </>
+              Elevate your brand with {" "}
+              <span className="text-purple-600 aquire-bold" >S.P.</span><span className="aquire-bold">Enterprise.</span> We craft compelling visuals, from logos to social media graphics, tailored to your brand's identity. Our creative, strategic designs captivate and make a lasting impression.            </>
           }
         />
         <QualityFeature
@@ -55,10 +51,8 @@ const QualityFeatures = () => {
           title="Logo Design"
           desc={
             <>
-              Make your brand unforgettable with our professional logo design services.
-              At {" "}
-              <span className="text-purple-600 aquire-bold" >S.P.</span><span className ="aquire-bold">Enterprise.</span>, we specialize in creating distinctive and memorable logos that embody your brand's essence. Our approach combines creativity with strategic thinking to deliver a logo that not only stands out but also communicates your brand’s values and identity. Whether you're launching a new business or refreshing an existing brand, we design logos that make a lasting impact and set you apart from the competition.
-            </>
+              Make your brand unforgettable with {" "}
+              <span className="text-purple-600 aquire-bold" >S.P.</span><span className="aquire-bold">Enterprise</span> logo design. We create distinctive, memorable logos that capture your brand's essence and values. Whether launching or rebranding, our logos leave a lasting impact and set you apart.            </>
           }
         />
         <QualityFeature
@@ -66,9 +60,8 @@ const QualityFeatures = () => {
           title="Monogram Design"
           desc={
             <>
-              Enhance your brand's elegance with our bespoke monogram design services. At {" "}
-              <span className="text-purple-600 aquire-bold" >S.P.</span><span className="aquire-bold">Enterprise.</span>, we specialize in crafting sophisticated and personalized monograms that capture your unique identity. Our designs blend artistry with precision, creating distinctive symbols that serve as a stylish representation of your brand or personal mark. Perfect for logos, stationery, and branding materials, our monograms are designed to leave a lasting impression and add a touch of refinement to your brand's image.
-            </>
+              Elevate your brand with bespoke monogram design from {" "}
+              <span className="text-purple-600 aquire-bold" >S.P.</span><span className="aquire-bold">Enterprise.</span> We craft sophisticated, personalized symbols that reflect your unique identity. Perfect for logos and branding, our monograms add elegance and leave a lasting impression.            </>
           }
         />
       </div>

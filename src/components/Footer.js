@@ -19,7 +19,7 @@ const Footer = ({ onLegalLinkClick }) => {
               End-to-End Excellence in Web and Graphic Design. Seamless Solutions from Concept to Completion.
             </p>
             <div className="flex mt-8 space-x-6">
-              <Link href="https://www.instagram.com/sam.eer1910?igsh=emltdWc1MWU5cHdh&utm_source=qr" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.instagram.com/s.p.enterprise__/" target="_blank" rel="noopener noreferrer">
                 <InstagramIcon className="hover:text-purple-600 hover:-translate-y-1 transition-all" />
               </Link>
               <Link href="https://github.com/SP-Enterprises" target="_blank" rel="noopener noreferrer">
