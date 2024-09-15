@@ -13,7 +13,7 @@ const Footer = ({ onLegalLinkClick }) => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <Link href={"/"} className="text-3xl">
-              <b><span className="text-purple-600 aquire-bold" >S.P.</span><span className ="aquire-bold">Enterprise.</span></b>
+              <b><span className="text-purple-600 aquire-bold" >S.P.</span><span className="aquire-bold">Enterprise.</span></b>
             </Link>
             <p className="max-w-xs mt-4 text-sm">
               End-to-End Excellence in Web and Graphic Design. Seamless Solutions from Concept to Completion.
@@ -48,11 +48,12 @@ const Footer = ({ onLegalLinkClick }) => {
             <div>
               <p className="font-medium">Services</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm ">
-                <Link href="#services" className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit">Web Design</Link>
+                <Link href="#services" className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit">Web Development</Link>
                 <Link href="#services" className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit">Graphic Design</Link>
                 <Link href="#services" className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit">Logo Design</Link>
                 <Link href="#services" className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit">Monogram Design</Link>
-                <Link href="#services" className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit">UI</Link>
+                <Link href="#services" className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit">Digital Marketing</Link>
+                <Link href="#services" className="hover:opacity-75 hover:border-b hover:border-neutral-400 w-fit">UI / UX</Link>
               </nav>
             </div>
             <div>
@@ -81,11 +82,11 @@ const Footer = ({ onLegalLinkClick }) => {
         <p className="mt-8 text-xs">
           <b>Contact:</b> <a href="tel:+919265324576" className="text-purple-600 hover:underline">(+91) 926-532-4576</a><br />
           <b>Email:</b> <a href="mailto:connectspenterprise@gmail.com" className="text-purple-600 hover:underline">connectspenterprise@gmail.com</a><br />
-          <b>Address 1:</b> SP House, Aadil Park, 33, nr. Darul Uloom Road, Momin Park,<br/> Tandalja, Vadodara, Gujarat 390012.<br />
+          <b>Address 1:</b> SP House, Aadil Park, 33, nr. Darul Uloom Road, Momin Park,<br /> Tandalja, Vadodara, Gujarat 390012.<br />
           <b>Address 2:</b> Vancouver, BC V5M 4X5, Canada
-          
+
           <br />
-          © 2024 <span className="text-purple-600 aquire-bold" >S.P.</span><span className ="aquire-bold">Enterprise.</span> - All rights reserved
+          © 2024 <span className="text-purple-600 aquire-bold" >S.P.</span><span className="aquire-bold">Enterprise.</span> - All rights reserved
         </p>
 
       </div>

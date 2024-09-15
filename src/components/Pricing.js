@@ -96,6 +96,7 @@ const Pricing = () => {
             btnText="Get Started Now"
             plans={[
               "Consultation: 30-minute session to discuss website goals and requirements.",
+              "UI/UX Design: Basic user experience and interface design to ensure ease of navigation.",
               "Design: 1 design concept for up to 3 pages (e.g., Home, About, Contact).",
               "Responsive Design: Basic mobile and tablet responsiveness.",
               "Revisions: 1 round of feedback and minor adjustments.",
@@ -112,6 +113,7 @@ const Pricing = () => {
             trail="Exclusive curated for You"
             plans={[
               "Consultation: 1-hour session to discuss website goals, content strategy, and design preferences.",
+              "UI/UX Design: User-centered interface design ensuring a seamless user experience.",
               "Design: 1 design concept for up to 5 pages (e.g., Home, About, Services, Blog, Contact).",
               "Responsive Design: Advanced mobile and tablet responsiveness with custom layouts.",
               "Revisions: 2 rounds of feedback and adjustments.",
@@ -133,6 +135,7 @@ const Pricing = () => {
               trail="Exclusive curated for You"
               plans={[
                 "Consultation: 2-hour strategy session to cover website goals, brand identity, and long-term vision.",
+                "UI/UX Design: Fully tailored user experience with unique user interface design for optimal engagement.",
                 "Design: 2 design concepts for up to 8 pages (e.g., Home, About, Services, Blog, Portfolio, Contact, Testimonials, FAQs).",
                 "Responsive Design: Fully customized mobile, tablet, and desktop designs with unique layouts.",
                 "Revisions: Unlimited rounds of feedback and revisions during the design phase.",
@@ -152,11 +155,12 @@ const Pricing = () => {
             price="$XXX"
             btnText="Get Started Now"
             plans={[
-              " Consultation: 30-minute session to discuss design goals and preferences.",
-              " Logo Design: 1 initial concept with 2 revisions.",
-              " Monogram Design: Simple monogram design (if requested).",
-              " File Formats: Final logo delivered in PNG and JPEG formats.",
-              " Branding Guide: Basic color palette and font suggestions.",
+              "Consultation: 30-minute session to discuss design goals and preferences.",
+              "Logo Design: 1 initial concept with 2 revisions.",
+              "Monogram Design: Simple monogram design (if requested).",
+              "File Formats: Final logo delivered in PNG and JPEG formats.",
+              "Branding Guide: Basic color palette and font suggestions.",
+              "Digital Marketing: Basic strategy consultation for online brand visibility.",
               "Turnaround Time: 5 business days.",
             ]}
           />
@@ -172,6 +176,7 @@ const Pricing = () => {
               "Monogram Design: Customized monogram design.",
               "File Formats: Final logo delivered in PNG, JPEG, and vector formats (SVG, EPS).",
               "Branding Guide: Detailed branding guide with color palette, typography, and usage guidelines.",
+              "Digital Marketing: Social media kit and consultation for online campaigns.",
               "Social Media Kit: Branded social media profile pictures and cover images.",
               "Turnaround Time: 7 business days.",
             ]}
@@ -192,6 +197,7 @@ const Pricing = () => {
                 "Monogram Design: Premium, highly detailed monogram design.",
                 "File Formats: Final logo delivered in all necessary formats, including PNG, JPEG, vector (SVG, EPS), and high-resolution print files.",
                 "Branding Guide: Comprehensive branding guide with color palette, typography, logo usage, and brand messaging.",
+                "Digital Marketing: Comprehensive digital marketing strategy with campaign management support.",
                 "Social Media Kit: Complete set of branded social media assets, including profile pictures, cover images, and post templates.",
                 "Stationery Design: Custom business card, letterhead, and envelope design.",
                 "Turnaround Time: 10 business days.",

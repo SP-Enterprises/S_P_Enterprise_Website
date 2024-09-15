@@ -15,11 +15,13 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [selectedItem, setSelectedItem] = useState("/");
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false); // <-- Define mounted state
   const navbar = useRef();
 
   useEffect(() => {
+    setMounted(true); // <-- Set mounted to true when the component is mounted
+
     window.onscroll = () => {
-      setMounted(true);
       if (window.pageYOffset >= 200) {
         navbar.current.classList.add("shadow");
       } else {
@@ -60,6 +62,9 @@ const Navbar = () => {
     }
   };
 
+  // Return early if not mounted to prevent SSR issues
+  if (!mounted) return null;
+
   return (
     <div
       ref={navbar}
@@ -81,8 +86,6 @@ const Navbar = () => {
               ENTERPRISE.
             </span>
           </h2>
-
-
         </div>
 
         <div>

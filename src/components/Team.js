@@ -58,9 +58,9 @@ const Team = () => {
           imgSrc={"/team/2.png"}
           name="Uvesh Khan"
           title={<>
-            Graphic Designer | UI / UX 
+            Graphic Designer | UI / UX |
             <br />
-          Digital Marketing
+            Digital Marketing
           </>
           }
           instagram="https://www.instagram.com/uvxxsh?igsh=ODZreHVzeml4Y3pq"
@@ -72,7 +72,7 @@ const Team = () => {
           name="Obaid Arab"
           title=
           {<>
-           Web Designer |
+            Web Designer |
             <br />
             Wordpress Developer
           </>
