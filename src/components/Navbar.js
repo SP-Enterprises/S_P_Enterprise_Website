@@ -103,7 +103,7 @@ const Navbar = () => {
             >
               <CloseOutlinedIcon />
             </button>
-            {["home", "services", "about us", "our team", "contact us"].map(
+            {["home", "services", "about us", "contact us"].map(
               (link) => (
                 <li
                   key={link}
