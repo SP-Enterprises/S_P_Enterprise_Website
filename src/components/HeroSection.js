@@ -15,7 +15,7 @@ const Hepurplection = () => {
         </h1>
         <p className="text-lg leading-normal sm:leading-loose my-4 md:my-6">
           Transforming Visions into Pixels.We provide all kind of Graphic 
-          related work also we take Web Design projects.
+          related, Digital Marketing work also we take Web Development projects.
         </p>
         <button className="md:text-base text-sm hover:border-2 border-2 border-transparent font-semibold py-3 px-8 md:px-10 text-white bg-purple-600 hover:border-purple-600 hover:bg-transparent hover:text-purple-600 rounded-full">
           <Link href={"#services"}>

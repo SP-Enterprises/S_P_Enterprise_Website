@@ -7,7 +7,7 @@ import HeroSection from "@/components/HeroSection";
 import Pricing from "@/components/Pricing";
 import QualityFeatures from "@/components/QualityFeatures";
 import Subscribe from "@/components/Subscribe";
-import Team from "@/components/Team";
+// import Team from "@/components/Team";
 import Work from "@/components/Work";
 import Faqs from "@/components/faqs";
 import PrivacyPolicy from "@/components/privacy-policy";
@@ -63,7 +63,7 @@ export default function Home() {
           <Pricing />
           <Subscribe />
           <Clients />
-          <Team />
+          {/* <Team /> */}
           <AboutUs />
           <Analytics />
         </div>
